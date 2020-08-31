@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>Laboratrio Modulo 4 -3</title>
+</head>
+
+<body>
+    <h1>Laboratorio Modulo 4 - 3</h1>
+    <div class="container-hotel-reservation">
+        <div class="container-reservation-price">
+            <span id="reservationPrice"></span>
+        </div>
+        <div class="container-room-type">
+            <div class="container-col1">
+                <label for="roomType"><b>Select room type</b></label>
+            </div>
+            <div class="container-col2">
+                <select name="roomType" id="roomType">
+                    <option value="" selected>Select an option</option>
+                    <option value="standard">Standard</option>
+                    <option value="juniorsuite">Junior Suite</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+        </div>
+        <div class="container-spa">
+            <div class="container-col1">
+                <label for="spaOption"><b>Use SPA facilities</b></label>
+            </div>
+            <div class="container-col2">
+                <input type="checkbox" name="spaOption" id="spaOption">
+            </div>
+        </div>
+        <div class="container-room-occupation">
+            <div class="container-col1">
+                <label for="roomOccupation"><b>Select room occupation</b></label>
+            </div>
+            <div class="container-col2">
+                <select name="roomOccupation" id="roomOccupation">
+                    <option value="" selected>Select an option</option>
+                    <option value="individual">Individual</option>
+                    <option value="double">Double</option>
+                    <option value="triple">Triple</option>
+                </select>
+            </div>
+        </div>
+        <div class="container-room-nights">
+            <div class="container-col1">
+                <label for="roomNights"><b>Number of nights</b></label>
+            </div>
+            <div class="container-col2">
+                <input type="number" name="roomNights" id="roomNights" min="0" value="0" />
+            </div>
+        </div>
+        <div class="container-parking-nights">
+            <div class="container-col1">
+                <label for="parkingNights"><b>Nights using parking</b></label>
+            </div>
+            <div class="container-col2">
+                <input type="number" name="parkingNights" id="parkingNights" min="0" value="0" />
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
